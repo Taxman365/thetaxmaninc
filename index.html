@@ -1,43 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Taxman Inc | CPA Firm</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional CPA & Accounting Services | USA & Canada</title>
+  <meta name="description" content="Nationwide CPA firm providing tax, bookkeeping, payroll, and advisory services for individuals and businesses across the U.S. and Canada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f2a44;
+      --secondary: #1f4b7a;
+      --light: #f5f7fa;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: #ffffff;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .nav h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #ffffff;
+      padding: 90px 0;
+    }
+
+    .hero h2 {
+      font-size: 38px;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 16px;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--primary);
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .process {
+      background: var(--light);
+    }
+
+    .cta {
+      background: var(--primary);
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      margin-bottom: 25px;
+      opacity: 0.95;
+    }
+
+    footer {
+      background: #0b1e30;
+      color: #cbd5e1;
+      padding: 40px 0;
+      font-size: 14px;
+    }
+
+    footer .grid {
+      gap: 20px;
+    }
+
+    footer h4 {
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    footer p { font-size: 13px; }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 30px; }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>The Taxman Inc</h1>
-    <p>Trusted CPA & Accounting Services</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <div class="container nav">
+    <h1>CPA Firm</h1>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 </header>
 
-<section>
-    <h2>Your Reliable CPA Partner</h2>
-    <p>
-        The Taxman Inc provides professional tax, payroll, and accounting services
-        to businesses and individuals across the United States.
-    </p>
+<section class="hero">
+  <div class="container">
+    <h2>Accounting & Tax Services for Individuals and Businesses Across the U.S. & Canada</h2>
+    <p>We provide professional tax, bookkeeping, payroll, and advisory services with a focus on accuracy, compliance, and long-term financial clarity.</p>
+    <a href="#contact" class="btn">Schedule a Consultation</a>
+  </div>
 </section>
 
-<section>
-    <h3>Why Choose Us</h3>
-    <ul>
-        <li>Experienced CPA Professionals</li>
-        <li>Accurate & Timely Payroll Processing</li>
-        <li>Federal & State Tax Compliance</li>
-        <li>Client-Focused Support</li>
-    </ul>
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h3>Our Services</h3>
+      <p>Comprehensive accounting solutions designed to support your financial needs</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h4>Tax Preparation & Planning</h4>
+        <p>Individual and business tax filings, strategic planning, and compliance support throughout the year.</p>
+      </div>
+      <div class="card">
+        <h4>Bookkeeping</h4>
+        <p>Accurate monthly bookkeeping, reconciliations, and clear financial reporting.</p>
+      </div>
+      <div class="card">
+        <h4>Payroll Services</h4>
+        <p>End-to-end payroll processing with timely filings and regulatory compliance.</p>
+      </div>
+      <div class="card">
+        <h4>Advisory Services</h4>
+        <p>Practical financial guidance to support business decisions and long-term growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="container">
+    <div class="section-title">
+      <h3>How We Work</h3>
+      <p>A straightforward and transparent approach</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h4>Consultation</h4><p>We understand your financial goals and requirements.</p></div>
+      <div class="card"><h4>Planning</h4><p>Customized strategies tailored to your situation.</p></div>
+      <div class="card"><h4>Execution</h4><p>Accurate and timely delivery of services.</p></div>
+      <div class="card"><h4>Ongoing Support</h4><p>Year-round guidance and responsive communication.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <h3>About Our Firm</h3>
+      <p>Professional accounting support you can rely on</p>
+    </div>
+    <p style="max-width: 800px; margin: auto; color: var(--muted); font-size: 15px;">
+      We are a professional CPA firm serving individuals and businesses across the United States and Canada. Our team is committed to providing accurate, compliant, and practical accounting solutions while maintaining the highest standards of integrity and confidentiality.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <div class="container">
+    <h3>Ready to Get Started?</h3>
+    <p>Contact our team to discuss your accounting and tax needs.</p>
+    <a href="mailto:info@taxman365.com" class="btn">Contact Us</a>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 The Taxman Inc | Schaumburg, IL</p>
+  <div class="container grid">
+    <div>
+      <h4>CPA Firm</h4>
+      <p>Nationwide accounting and tax services for individuals and businesses.</p>
+    </div>
+    <div>
+      <h4>Service Area</h4>
+      <p>United States & Canada</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: info@taxman365.com</p>
+    </div>
+  </div>
 </footer>
 
 </body>
